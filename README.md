@@ -1,1 +1,1 @@
-## Learn the functional programming using JavaScript :)
+## Functional programming using JavaScript :)
