@@ -1,0 +1,23 @@
+{
+  "name": "functional-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdinesh/functional-javascript.git"
+  },
+  "keywords": [],
+  "author": "Dinesh Bogolu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdinesh/functional-javascript/issues"
+  },
+  "homepage": "https://github.com/bdinesh/functional-javascript#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
