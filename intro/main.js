@@ -1,32 +1,10 @@
 /**
  * Created by DineshBogolu on 04-08-2016.
  */
-const _ = require('underscore');
+var array = require('./array');
 
-const splat = function (fn) {
-    return function (array) {
-        return fn.apply(null, array);
-    };
-};
-
-const unsplat = function (fn) {
-    return function () {
-        return fn.call(null, _.toArray(arguments));
-    };
-};
-
-function add() {
-    var addArray = splat(function (a, b) {
-        return a + b;
-    });
-
-    return addArray([1, 2]);
-}
-
-console.log(add(1, 2));
-
-const joinElements = unsplat(function (array) {
-    return array.join(' ');
-});
-
-console.log(joinElements(1, 2, 3));
+console.log(array.nth([3,7,9,111,56],3));
+console.log(array.nth('abcd',3));
+console.log(array.nth({a:1,b:2},1));
+console.log(array.nth(1234, 10));
+console.log(array.nth(1234, 'sdsd'));
