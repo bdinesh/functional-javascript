@@ -1,6 +1,3 @@
-/**
- * Created by DineshBogolu on 05-08-2016.
- */
 const _ = require('underscore');
 
 const splat = function (fn) {
