@@ -1,5 +1,6 @@
-const array = require('./array');
+const array = require('./intro/array');
 const currying = require('./currying');
+const lexicalScope = require('./lexicalScope');
 
 // console.log(array.nth([3, 7, 9, 111, 56], 3));
 // console.log(array.nth('abcd', 3));
@@ -9,3 +10,7 @@ const currying = require('./currying');
 
 //currying
 currying.example();
+
+//lexical scope
+lexicalScope.example1();
+lexicalScope.example2();

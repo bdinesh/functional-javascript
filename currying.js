@@ -1,4 +1,5 @@
-//Currying refers to the process of transforming a function with multiple arity into the same function with less arity.
+//Currying refers to the process of transforming a function
+// with multiple arity into the same function with less arity.
 
 const currier = function currier(fn) {
     var args = [].slice.call(arguments, 1);
