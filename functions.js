@@ -54,6 +54,22 @@ exports.higherOrderFunctions = () => {
 const not = (fn) => (x) => !fn(x);
 
 
+//Partial application
+//Taking a function that accepts some number of arguments, binding values to one or more of those arguments,
+// and returning a new function that only accepts the remaining, un-bound arguments.
+
+const map = (array, fn) => array.map(fn);
+
+//partial application of map
+const mapWith = (fn) => (array) => map(array, fn);
+const squareAll = mapWith((n) => n * n); //(array) => map(array, (n) => n * n);
+
+exports.example3 = () => {
+    const x = squareAll([1, 2, 3]);
+    console.log(x);
+};
+
+
 
 
 
