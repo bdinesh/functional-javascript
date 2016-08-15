@@ -48,6 +48,11 @@ exports.higherOrderFunctions = () => {
     console.log(doubleOfAddOne(2));
 };
 
+//Function Decorators: A function decorator is a higher-order function that takes one function as an argument,
+// returns another function, and the returned function is a variation of the argument function
+
+const not = (fn) => (x) => !fn(x);
+
 
 
 
