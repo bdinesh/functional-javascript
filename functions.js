@@ -57,6 +57,7 @@ const not = (fn) => (x) => !fn(x);
 //Partial application
 //Taking a function that accepts some number of arguments, binding values to one or more of those arguments,
 // and returning a new function that only accepts the remaining, un-bound arguments.
+////fn(a, b, c) = fn(a)(b)(c);
 
 const map = (array, fn) => array.map(fn);
 
@@ -80,8 +81,6 @@ const partial = function (fn, ...args) {
     else
         return fn;
 };
-
-//add(a, b, c) = add(a(b(c)));
 
 const partialFn = (fn, ...args) =>
     (...remainingArgs) =>
