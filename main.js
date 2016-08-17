@@ -22,4 +22,6 @@ const functions = require('./functions');
 
 //functions
 //functions.higherOrderFunctions();
-functions.example3();
+//functions.example3();
+functions.partialApplication();
+

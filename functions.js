@@ -69,6 +69,32 @@ exports.example3 = () => {
     console.log(x);
 };
 
+const add = function add(...args) {
+    let result = args.reduce((a, b) => a + b, 0);
+    return result;
+};
+
+const partial = function (fn, ...args) {
+    if (args.length > 0)
+        return fn(args[0], args.splice(1));
+    else
+        return fn;
+};
+
+//add(a, b, c) = add(a(b(c)));
+
+const partialFn = (fn, ...args) =>
+    (...remainingArgs) =>
+        fn(...args, ...remainingArgs);
+
+exports.partialApplication = () => {
+    let x = partialFn((n) => n + 1, 1, 2, 3);
+    console.log(x);
+    let y = x(1);
+    console.log(y);
+};
+
+
 
 
 
